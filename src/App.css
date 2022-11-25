@@ -1,38 +1,140 @@
-.App {
+.App{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:rgb(231, 215, 231)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imd{
+  width: 50%;
+  height: 50%;
+  padding: 10px 10px 10px 10px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .main{
+  text-align: center;
+  flex-flow: row wrap;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+
+.container{
+  display: inline-block;
+  border-color: aqua;
+ 
+}
+
+.container h1{
+  color : rgb(244, 111, 10)
+}
+
+.container p{
+  color : rgb(10, 104, 244);
+
+}
+
+.fullview{
+  width: -webkit-fill-available;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn{
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(16, 95, 69);
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: aliceblue;
+}
+
+li{
+  padding: 10px 10px 10px 10px;
+}
+
+
+
+.pagination {
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  justify-content: center;  
+  display: flex;
+}
+
+ul.pagination li {
+  display: inline-table;;
+  width: 30px;
+  border: 1px solid #cc1010;
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 24px;
+  border-radius: 5px;
+  
+}
+ul.pagination li a {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 18px;
+  padding: 1px 1px 1px 1px;
+  display: block;
+}
+
+
+ul.pagination li.active a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ul.pagination li.active {
+  background-color: #337ab7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.pagination li a:hover,
+ul.pagination li a.active {
+  color: blue;
+  font-size: 30px;
 }
+
+.page-selection {
+  width: 48px;
+  height: 30px;
+  color: #337ab7;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-direction: row;
+}
+.previous{
+  display: inline-table;
+}
+
+@media (max-width: 1600px) and (min-width: 1300px){
+  
+  .container{
+    justify-content: space-between;
+    text-align: center;
+    width: 40%;
+  }
+
+} 
+
+
+ @media (max-width: 1200px) and (min-width: 400px){
+  
+  .container{
+    width: 40%;
+    padding:10px 10px 10px 10px;
+  }
+
+} 
+
+
